@@ -31,9 +31,11 @@
 
 /* Typefaces*/
 
-@font-face {font-family: "Roboto-regular";src: url('webfonts/Roboto-Regular-webfont.eot');src: url('webfonts/Roboto-Regular-webfont.eot#iefix') format('embedded-opentype'),url('webfonts/Roboto-Regular-webfont.woff') format('woff'),url('webfonts/Roboto-Regular-webfont.ttf') format('truetype');}
-@font-face {font-family: "Roboto-light";src: url('webfonts/Roboto-Light.eot');src: url('webfonts/Roboto-Light.eot#iefix') format('embedded-opentype'),url('webfonts/Roboto-Light.woff') format('woff'),url('webfonts/Roboto-Light.ttf') format('truetype');}
-@font-face {font-family: "Roboto-bold";src: url('webfonts/Roboto-Bold-webfont.eot');src: url('webfonts/Roboto-Bold-webfont.eot#iefix') format('embedded-opentype'),url('webfonts/Roboto-Bold-webfont.woff') format('woff'),url('webfonts/Roboto-Bold-webfont.ttf') format('truetype');}
+@font-face {font-family: "Lato-regular"; src: url('webfonts/Lato-Regular.ttf') format('truetype');}
+@font-face {font-family: "Lato-light"; src: url('webfonts/Lato-Light.ttf') format('truetype');}
+@font-face {font-family: "Lato-bold";src: url('webfonts/Lato-Bold.ttf') format('truetype');}
+@font-face {font-family: "Lora-regular"; src: url('webfonts/Lora-Regular.ttf') format('truetype');}
+@font-face {font-family: "Lora-medium";src: url('webfonts/Lora-Medium.ttf') format('truetype');}
 
 
 .container {
@@ -242,7 +244,7 @@
 
 
 .menu-element-alt {
-    font-family: "Roboto-light", sans-serif;
+    font-family: "Lora-regular", sans-serif;
     font-size: 20px;
     word-spacing: 1px;
     letter-spacing: .3px;
@@ -347,7 +349,7 @@ hr { width:100%; height:1px; background: #fff }
     padding-left: 1rem;
     word-spacing: -1.5px;
     line-height: normal;
-    font-family: "Roboto-light";
+    font-family: "Lora-regular";
     letter-spacing: .2px;
     color: #4C4C4C;
     background-color: white;
@@ -392,7 +394,7 @@ hr { width:100%; height:1px; background: #fff }
   padding-top: 2.5rem;
   word-spacing: -1.5px;
   line-height: normal;
-  font-family: "Roboto-light";
+  font-family: "Lora-regular";
 }
 
 .work-menu-alt a:hover h3 {
@@ -425,7 +427,7 @@ hr { width:100%; height:1px; background: #fff }
 .project-page h1 {
   margin-bottom: 10px;
   letter-spacing: .8px;
-  font-family: "Roboto-regular";
+  font-family: "Lora-regular";
   font-weight: 600;
   color: #4C4C4C;
 }
@@ -513,7 +515,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 300;
-  font-family: "Roboto-light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lora-regular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
 
 
@@ -539,7 +541,7 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
   letter-spacing: .2px;
   padding-top: 2rem;
   float: left;
-  font-family: "Roboto-regular", "HelveticaNeue", Helvetica, sans-serif;
+  font-family: "Lora-regular", "HelveticaNeue", Helvetica, sans-serif;
 }
 
 .name-alt a {
@@ -590,7 +592,7 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
 p {
   margin-top: 0;
-  font-family: "Roboto-light", "HelveticaNeue", Helvetica, sans-serif;}
+  font-family: "Lora-regular", "HelveticaNeue", Helvetica, sans-serif;}
 
 
 /* media queries*/
