@@ -39,7 +39,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box; }
@@ -54,14 +54,85 @@
     .container {
       width: 83%;
       padding: 0; }
+
+      .project-page img {
+        padding-bottom: .8rem;
+       }
+
+       .project-images p {
+         text-align: left;
+         padding-left: 0;
+         font-size: 11px;
+       }
+
+       .project-page h1 {
+         font-size: 20px;
+       }
+
+       .project-page img, img.scale-with-grid { outline: 0; max-width: 100%; height: auto; }
+
+       .project-page {
+         padding-top: 2rem;
+       }
+
+       .sub-title p {
+         font-size: 15px;
+         letter-spacing: 1px;
+         line-height: 16px;
+       }
+
+       .sub-title h3 {
+         font-size: 15px;
+         letter-spacing: 1px;
+         line-height: 16px;
+       }
+
   }
+
+  @media  (max-width: 700px) {
+
+    .back-link a {
+      color: grey;
+      text-decoration:none;
+      font-size: 14px;
+      float: left;
+    }
+  }
+
+
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
     width: 90%;
     padding: 0; }
+
+  .project-page img {
+    padding-bottom: .8rem;
+    float: right;
+    }
+
 }
+
+
+ @media (min-width: 550px) {
+   .project-page img {
+     padding-bottom: 1rem;
+     float: right; }
+
+     .back-link a {
+       color: grey;
+       text-decoration:none;
+       font-size: 14px;
+       line-height: 14px;
+     }
+     .project-page {
+       padding-top: 2rem;
+       margin-left: -8px;
+     }
+
+}
+
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
@@ -165,27 +236,55 @@
 }
 
 
-.name a:hover {
-  color: red;
+.name-alt a:hover {
+  color: #4C4C4C;
 }
 
-.menu-element {
-    font-family: "Roboto-regular", sans-serif;
-    font-size: 24px;
+
+.menu-element-alt {
+    font-family: "Roboto-light", sans-serif;
+    font-size: 20px;
     word-spacing: 1px;
     letter-spacing: .3px;
     float: right;
-    padding-top: 2.6rem;
-    padding-right: 4rem;
+    margin-top: -5px;
+    color: #4C4C4C;
 }
 
-.menu-element li {
+.menu-element-alt li {
   display: inline-block;
 }
-.menu-element a:hover {
-  color: red;
+
+.menu-element-alt a {
+  color: #4C4C4C;
+  text-decoration: none;
 }
 
+.menu-element-alt a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.name-alt {
+  font-size: 20px;
+  color: #4C4C4C;
+  word-spacing: 1px;
+  letter-spacing: .2px;
+  padding-top: 2rem;
+  float: left;
+}
+
+.sub-title p {
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 18px;
+}
+
+.sub-title h3 {
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 18px;
+}
 
 
 .project-menu h2 {
@@ -239,6 +338,52 @@ hr { width:100%; height:1px; background: #fff }
   word-spacing: .05rem;
   letter-spacing: .05rem; */
 
+  .work-menu h3 {
+    text-align: left;
+    font-size: 19px;
+    font-weight: 300;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    word-spacing: -1.5px;
+    line-height: normal;
+    font-family: "Roboto-light";
+    letter-spacing: .2px;
+    color: #4C4C4C;
+    background-color: white;
+    margin-bottom: -1rem;
+    margin-left: -1rem;
+    max-width: 240px;
+    position:relative;
+  }
+
+  .work-menu a:hover h3 {
+      text-decoration: underline;
+      color: grey;
+  }
+
+  .work-menu img {
+
+    display: inline-block;
+    padding-top: .3rem;
+    padding-bottom: 2rem;
+    vertical-align: middle;
+    z-index: -1;
+
+  }
+
+  .work-menu img, img.scale-with-grid { outline: 0; max-width: 100%; height: auto; }
+
+
+  .work-menu-alt {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: .3rem;
+    padding-top: 2rem;
+  }
+
+
 
 .work-menu-alt h3 {
   text-align: center;
@@ -276,26 +421,39 @@ hr { width:100%; height:1px; background: #fff }
 
 .work-menu-alt img, img.scale-with-grid { outline: 0; max-width: 95%; height: auto; }
 
-.project-page {
-  padding-top: 2rem;
-}
 
 .project-page h1 {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   letter-spacing: .8px;
   font-family: "Roboto-regular";
   font-weight: 600;
+  color: #4C4C4C;
+}
+
+.project-page p {
+  color: #4C4C4C;
 }
 
 
-.project-page img {
-  padding-bottom: 2rem;
-  float: right;
 
+.project-images p {
+  line-height: 16px;
+  color: #999999;
+  font-size: 14px;
+  padding-bottom: 10px;
+  padding-top: 5px;
 }
 
-.project-page img, img.scale-with-grid { outline: 0; max-width: 95%; height: auto; }
+.project-page img, img.scale-with-grid { outline: 0; max-width: 100%; height: auto; }
 
+.back-link {
+  padding-top: 23px;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+  color: grey;
+}
 
 
 
@@ -315,7 +473,25 @@ hr { width:100%; height:1px; background: #fff }
 .navigation h3 {
 font-size: 18px;
 letter-spacing: 1px;
+line-height: normal;
 }
+
+.left-nav a {
+  color: #4C4C4C;
+}
+
+.left-nav a:hover {
+  color: red;
+}
+
+.right-nav a {
+  color: #4C4C4C;
+}
+
+.right-nav a:hover {
+  color: red;
+}
+
 .left-nav {
   float: left;
   padding: 10px;
@@ -333,6 +509,7 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
 body {
+  background-color: #F7F8F8;
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 300;
@@ -353,18 +530,43 @@ h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
 h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
-.name {
-  font-size: 28px;
-}
 
-.name {
-  color: black;
+
+.name-alt {
+  font-size: 20px;
+  color: #4C4C4C;
   word-spacing: 1px;
   letter-spacing: .2px;
-  margin-left: 6%;
   padding-top: 2rem;
   float: left;
+  font-family: "Roboto-regular", "HelveticaNeue", Helvetica, sans-serif;
 }
+
+.name-alt a {
+  color: #4C4C4C;
+}
+
+.project-heading {
+  padding-top: 2.6rem;
+}
+
+.project-heading h2 {
+  font-size: 20px;
+  letter-spacing: .2px;
+  padding-bottom: 0px;
+  float: left;
+}
+
+.project-heading a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.project-heading a {
+  text-decoration: none;
+  color: #4C4C4C;
+}
+
 /* Larger than phablet */
 @media (min-width: 550px) {
   h1 { font-size: 4.0rem; }
@@ -381,8 +583,9 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
     margin-left: 5rem;
     padding-top: 2rem;
     float: left;
-    font-size: 34px;
+    font-size: 28px;
   }
+
 }
 
 p {
